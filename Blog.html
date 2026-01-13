@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog | Divin Kimia - Portfolio Développeur Web & IA</title>
+
+  <!-- Lien vers le CSS -->
+  <link rel="stylesheet" href="../CSS/Accueil.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- JS chargé en bas (defer) -->
+  <script src="../JS/GalaxyEffect.js" defer></script>
+  <script src="../JS/Accueil.js" defer></script>
+</head>
+<body>
+  <!-- Container pour l'effet galaxie -->
+  <div id="galaxy-container"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="../img/ProfileAccueil.jpeg" alt="avatar" class="logo">
+      <span class="brand">Divin Kimia</span>
+    </div>
+
+    <button class="nav-toggle" aria-label="Ouvrir le menu">
+      <span class="hamburger"></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="../HTML/Accueil.html">Accueil</a></li>
+      
+      <!-- Menu Parcours avec sous-menu dynamique -->
+      <li class="dropdown dynamic-dropdown">
+        <a href="../HTML/Parcours_HTML/ParcoursPage.html" class="dropdown-toggle" data-default-text="Parcours">Parcours</a>
+        <ul class="dropdown-menu dynamic-menu">
+          <li><a href="../HTML/Parcours_HTML/ExperiencesProfessionnels.html" class="swap-menu">Experiences professionnel</a></li>
+          <li><a href="../HTML/Parcours_HTML/FormationsPage.html" class="swap-menu">Formations</a></li>
+          <li><a href="../HTML/Parcours_HTML/CertificationPage.html" class="swap-menu">Certification</a></li>
+        </ul>
+      </li>
+      
+      <!-- Menu Projets -->
+      <li><a href="../HTML/Projets.html">Projets</a></li>
+      
+      <!-- Menu Compétences -->
+      <li><a href="competences.html">Compétences</a></li>
+      
+      <li><a href="../HTML/Veilles.html">Veilles</a></li>
+      <li><a href="../HTML/MeDecouvrir.html">Me découvrir</a></li>
+      <li><a href="../HTML/Blog.html" class="active">Blog</a></li>
+    </ul>
+
+    <a href="#contact" class="nav-btn">Contact</a>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="modern-background">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span>Blog Technique</span>
+      </div>
+      
+      <h1 class="hero-title">
+        <span class="title-line">Mon <span class="accent-text">Blog</span></span>
+        <span class="title-sub">Articles, Tutoriels & Réflexions</span>
+      </h1>
+      
+      <p class="hero-description">
+        Partage de connaissances, tutoriels pratiques et réflexions sur le développement web, 
+        l'intelligence artificielle et les technologies émergentes.
+      </p>
+      
+      <div class="hero-scroll">
+        <span>Découvrir les articles</span>
+        <div class="scroll-indicator"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION ARTICLES -->
+  <section class="blog-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Articles Récents</h2>
+        <p>Découvrez mes derniers articles et tutoriels</p>
+      </div>
+      
+      <div class="blog-grid">
+        <!-- Article 1 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Article React">
+            <div class="blog-category">React</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">15 Nov 2024</span>
+              <span class="blog-read-time">8 min de lecture</span>
+            </div>
+            <h3 class="blog-title">Optimisation des performances React avec useMemo et useCallback</h3>
+            <p class="blog-excerpt">
+              Guide complet sur l'utilisation des hooks de mémorisation pour améliorer les performances 
+              de vos applications React. Cas d'usage pratiques et bonnes pratiques.
+            </p>
+            <a href="#" class="blog-link">Lire l'article →</a>
+          </div>
+        </article>
+        
+        <!-- Article 2 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="Article IA">
+            <div class="blog-category">IA</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">10 Nov 2024</span>
+              <span class="blog-read-time">12 min de lecture</span>
+            </div>
+            <h3 class="blog-title">Introduction aux Transformers : Comprendre l'architecture moderne de l'IA</h3>
+            <p class="blog-excerpt">
+              Exploration approfondie de l'architecture Transformer qui révolutionne le traitement 
+              du langage naturel et l'intelligence artificielle moderne.
+            </p>
+            <a href="#" class="blog-link">Lire l'article →</a>
+          </div>
+        </article>
+        
+        <!-- Article 3 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Article CSS">
+            <div class="blog-category">CSS</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">5 Nov 2024</span>
+              <span class="blog-read-time">6 min de lecture</span>
+            </div>
+            <h3 class="blog-title">CSS Grid vs Flexbox : Quand utiliser quoi ?</h3>
+            <p class="blog-excerpt">
+              Comparaison détaillée entre CSS Grid et Flexbox avec des exemples pratiques pour 
+              choisir la meilleure solution selon votre cas d'usage.
+            </p>
+            <a href="#" class="blog-link">Lire l'article →</a>
+          </div>
+        </article>
+        
+        <!-- Article 4 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Article Node.js">
+            <div class="blog-category">Backend</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">1 Nov 2024</span>
+              <span class="blog-read-time">10 min de lecture</span>
+            </div>
+            <h3 class="blog-title">Construire une API REST avec Node.js et Express</h3>
+            <p class="blog-excerpt">
+              Tutoriel pas à pas pour créer une API REST complète avec authentification, validation 
+              et gestion d'erreurs professionnelle.
+            </p>
+            <a href="#" class="blog-link">Lire l'article →</a>
+          </div>
+        </article>
+        
+        <!-- Article 5 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Article Docker">
+            <div class="blog-category">DevOps</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">28 Oct 2024</span>
+              <span class="blog-read-time">15 min de lecture</span>
+            </div>
+            <h3 class="blog-title">Docker pour les développeurs : Guide de démarrage</h3>
+            <p class="blog-excerpt">
+              Introduction complète à Docker avec des exemples pratiques pour containeriser vos 
+              applications et améliorer votre workflow de développement.
+            </p>
+            <a href="#" class="blog-link">Lire l'article →</a>
+          </div>
+        </article>
+        
+        <!-- Article 6 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="Article TypeScript">
+            <div class="blog-category">TypeScript</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">25 Oct 2024</span>
+              <span class="blog-read-time">9 min de lecture</span>
+            </div>
+            <h3 class="blog-title">TypeScript avancé : Types utilitaires et génériques</h3>
+            <p class="blog-excerpt">
+              Exploration des fonctionnalités avancées de TypeScript pour écrire du code plus sûr 
+              et maintenable avec des types puissants.
+            </p>
+            <a href="#" class="blog-link">Lire l'article →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CONTACT -->
+  <section id="contact" class="contact-preview">
+    <div class="container">
+      <div class="contact-content">
+        <h2>Intéressé par mon contenu ?</h2>
+        <p>N'hésitez pas à me contacter pour discuter de projets, d'opportunités ou simplement échanger autour des technologies.</p>
+        
+        <div class="contact-actions">
+          <a href="mailto:divin.kimia@example.com" class="btn btn-primary">Me contacter</a>
+          <a href="CV_Divin_Kimia.pdf" class="btn btn-secondary" download>Télécharger mon CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand-info">
+            <img src="../img/ProfileAccueil.jpeg" alt="avatar" class="footer-logo">
+            <div>
+              <h3>Divin Kimia</h3>
+              <p>Développeur Web & Passionné d'IA</p>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Créateur d'expériences digitales innovantes, à la croisée du développement web et de l'intelligence artificielle.
+          </p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="../HTML/Accueil.html">Accueil</a></li>
+              <li><a href="../HTML/Parcours_HTML/ParcoursPage.html">Parcours</a></li>
+              <li><a href="../HTML/Projets.html">Projets</a></li>
+              <li><a href="competences.html">Compétences</a></li>
+              <li><a href="../HTML/Veilles.html">Veilles</a></li>
+              <li><a href="../HTML/MeDecouvrir.html">Me découvrir</a></li>
+              <li><a href="../HTML/Blog.html">Blog</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-group">
+            <h4>Réseaux</h4>
+            <ul>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-group">
+            <h4>Légal</h4>
+            <ul>
+              <li><a href="#">Mentions légales</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Divin Kimia — Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Divin Kimia | Portfolio Développeur Web & IA</title>
+
+  <!-- Lien vers le CSS -->
+  <link rel="stylesheet" href="../CSS/Accueil.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- JS chargé en bas (defer) -->
+  <script src="../JS/GalaxyEffect.js" defer></script>
+  <script src="../JS/Accueil.js" defer></script>
+</head>
+<body>
+  <!-- Container pour l'effet galaxie -->
+  <div id="galaxy-container"></div>
+  <!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="../img/ProfileAccueil.jpeg" alt="avatar" class="logo">
+    <span class="brand">Divin Kimia</span>
+  </div>
+
+  <button class="nav-toggle" aria-label="Ouvrir le menu">
+    <span class="hamburger"></span>
+  </button>
+
+  <ul class="nav-links">
+    <li><a href="../HTML/Accueil.html" class="active">Accueil</a></li>
+    
+    <!-- Menu Parcours avec sous-menu dynamique -->
+    <li class="dropdown dynamic-dropdown">
+      <a href="../HTML/Parcours_HTML/ParcoursPage.html" class="dropdown-toggle" data-default-text="Parcours">Parcours</a>
+      <ul class="dropdown-menu dynamic-menu">
+        <li><a href="../HTML/Parcours_HTML/ExperiencesProfessionnels.html" class="swap-menu">Experiences professionnel</a></li>
+        <li><a href="../HTML/Parcours_HTML/FormationsPage.html" class="swap-menu">Formations</a></li>
+        <li><a href="../HTML/Parcours_HTML/CertificationPage.html" class="swap-menu">Certification</a></li>
+      </ul>
+    </li>
+    
+    <!-- Menu Projets -->
+    <li><a href="../HTML/Projets.html">Projets</a></li>
+    
+    <!-- Menu Compétences -->
+    <li><a href="competences.html">Compétences</a></li>
+    
+    <li><a href="../HTML/Veilles.html">Veilles</a></li>
+    <li><a href="../HTML/MeDecouvrir.html">Me découvrir</a></li>
+    <li><a href="../HTML/Blog.html">Blog</a></li>
+  </ul>
+
+  <a href="#contact" class="nav-btn">Contact</a>
+</nav>
+
+  <!-- HERO SECTION AVEC ANIMATION MODERNE -->
+  <header class="hero">
+    <!-- Animation moderne en arrière-plan -->
+    <div class="modern-background">
+      <!-- Réseau neuronal animé -->
+      <div class="neural-network">
+        <div class="neural-node" style="top: 20%; left: 10%"></div>
+        <div class="neural-node" style="top: 40%; left: 25%"></div>
+        <div class="neural-node" style="top: 60%; left: 15%"></div>
+        <div class="neural-node" style="top: 30%; left: 40%"></div>
+        <div class="neural-node" style="top: 50%; left: 50%"></div>
+        <div class="neural-node" style="top: 70%; left: 35%"></div>
+        <div class="neural-node" style="top: 25%; left: 65%"></div>
+        <div class="neural-node" style="top: 45%; left: 75%"></div>
+        <div class="neural-node" style="top: 65%; left: 60%"></div>
+        <div class="neural-node" style="top: 35%; left: 85%"></div>
+        <div class="neural-node" style="top: 55%; left: 90%"></div>
+      </div>
+      
+      <!-- Particules flottantes -->
+      <div class="floating-particles">
+        <div class="particle" style="--size: 4px; --x: 15%; --y: 25%; --delay: 0s"></div>
+        <div class="particle" style="--size: 6px; --x: 85%; --y: 15%; --delay: 1s"></div>
+        <div class="particle" style="--size: 3px; --x: 10%; --y: 70%; --delay: 2s"></div>
+        <div class="particle" style="--size: 5px; --x: 90%; --y: 80%; --delay: 3s"></div>
+        <div class="particle" style="--size: 4px; --x: 50%; --y: 20%; --delay: 4s"></div>
+        <div class="particle" style="--size: 7px; --x: 30%; --y: 85%; --delay: 5s"></div>
+        <div class="particle" style="--size: 3px; --x: 70%; --y: 65%; --delay: 6s"></div>
+        <div class="particle" style="--size: 5px; --x: 45%; --y: 40%; --delay: 7s"></div>
+      </div>
+      
+      <!-- Ondes concentriques -->
+      <div class="concentric-waves">
+        <div class="wave" style="--size: 1; --delay: 0s"></div>
+        <div class="wave" style="--size: 2; --delay: 1s"></div>
+        <div class="wave" style="--size: 3; --delay: 2s"></div>
+        <div class="wave" style="--size: 4; --delay: 3s"></div>
+      </div>
+      
+      <!-- Éléments géométriques animés -->
+      <div class="geometric-shapes">
+        <div class="shape triangle" style="--x: 80%; --y: 30%; --delay: 0s"></div>
+        <div class="shape square" style="--x: 20%; --y: 60%; --delay: 2s"></div>
+        <div class="shape circle" style="--x: 60%; --y: 80%; --delay: 4s"></div>
+        <div class="shape hexagon" style="--x: 40%; --y: 20%; --delay: 6s"></div>
+      </div>
+    </div>
+    
+    <div class="hero-content">
+      <div class="sticker-container">
+        <div class="sticker-wrapper">
+          <img src="../IMG/ProfileAccueil.jpeg" alt="Divin Kimia" class="profile-sticker">
+          <div class="sticker-glow"></div>
+        </div>
+      </div>
+      
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="title-line-1">Bonjour, je suis</span>
+          <span class="title-line">Divin <span class="accent-text">Kimia</span></span>
+          <span class="title-sub">Développeur Web Full-Stack</span>
+        </h1>
+        
+        <div class="hero-actions">
+          <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+          <a href="../HTML/MeDecouvrir.html" class="btn btn-secondary">En savoir plus</a>
+        </div>
+      </div>
+      
+      <div class="hero-scroll">
+        <span>Explorer</span>
+        <div class="scroll-indicator"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION INTRO -->
+  <section class="intro-section">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-text">
+          <h2>Innovation & Créativité</h2>
+          <p>
+            Mon portfolio présente mon parcours en informatique, mes compétences en développement 
+            et ma passion pour l'IA et les nouvelles technologies. Explorez mes réalisations, 
+            découvrez mon approche et voyez comment je peux contribuer à vos projets.
+          </p>
+          <div class="intro-stats">
+            <div class="stat">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Projets réalisés</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Années d'expérience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Technologies maîtrisées</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="intro-visual">
+          <div class="tech-stack">
+            <div class="tech-item">
+              <span class="tech-icon">🌐</span>
+              <span>Développement Web</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">🤖</span>
+              <span>Intelligence Artificielle</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">🔒</span>
+              <span>Cybersécurité</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">📊</span>
+              <span>Data Science</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- SECTION COMPÉTENCES -->
+  <section class="skills-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Mes Compétences</h2>
+        <p>Un panorama de mes expertises techniques et professionnelles</p>
+      </div>
+      
+      <div class="skills-grid">
+        <!-- Développement Frontend -->
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="category-icon">🎨</span>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-name">HTML5</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">CSS3</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 30%"></div>
+              </div>
+              <span class="skill-percent">30%</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Développement Backend -->
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="category-icon">⚙️</span>
+            <h3>Backend</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-name">C#</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 60%"></div>
+              </div>
+              <span class="skill-percent">60%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">C</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">C++</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 60%"></div>
+              </div>
+              <span class="skill-percent">60%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">PHP</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Base de données</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Outils & Méthodologies -->
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="category-icon">🛠️</span>
+            <h3>Outils & Méthodes</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-name">Git / GitHub</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 92%"></div>
+              </div>
+              <span class="skill-percent">92%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Méthodes Agile</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Docker</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 78%"></div>
+              </div>
+              <span class="skill-percent">78%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">UI/UX Design</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+              <span class="skill-percent">75%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section-footer">
+        <a href="competences.html" class="btn btn-outline">Voir le détail de mes compétences</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PROJETS PHARES -->
+  <section id="projets" class="featured-projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>Projets Récents</h2>
+        <p>Une sélection de mes réalisations les plus significatives</p>
+      </div>
+      
+      <div class="projects-showcase">
+        <div class="project-main">
+          <div class="project-card featured">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1581092787635-8f8b3e3f3b84?w=600&auto=format&fit=crop&q=80" alt="Portfolio personnel">
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span>HTML/CSS</span>
+                  <span>JavaScript</span>
+                  <span>UI/UX</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Portfolio Personnel</h3>
+              <p>Site interactif présentant mon profil et mes projets avec une interface moderne et responsive.</p>
+              <a href="#" class="project-link">Voir le projet →</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-secondary">
+          <div class="project-card">
+            <div class="project-icon">
+              <span>📱</span>
+            </div>
+            <div class="project-content">
+              <h3>Application To-Do</h3>
+              <p>Application JavaScript avec stockage local, filtres et interface utilisateur réactive.</p>
+              <a href="#" class="project-link">En savoir plus</a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-icon">
+              <span>🎮</span>
+            </div>
+            <div class="project-content">
+              <h3>Jeu Puissance 4</h3>
+              <p>Version console et GUI développée en C# pendant mon BTS.</p>
+              <a href="#" class="project-link">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section-footer">
+        <a href="../HTML/Projets.html" class="btn btn-outline">Voir tous les projets</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PARCOURS RAPIDE -->
+  <section class="journey-preview">
+    <div class="container">
+      <div class="section-header">
+        <h2>Mon Parcours</h2>
+        <p>Étapes clés de mon développement académique et professionnel</p>
+      </div>
+      
+      <div class="journey-timeline">
+        <div class="journey-item">
+          <div class="journey-year">2019-2022</div>
+          <div class="journey-content">
+            <h3>BTS SIO - SLAM</h3>
+            <p>Développement d'applications web et mobiles avec projets en entreprise.</p>
+          </div>
+        </div>
+        
+        <div class="journey-item">
+          <div class="journey-year">2022-2025</div>
+          <div class="journey-content">
+            <h3>Licence / Master Cybersécurité</h3>
+            <p>Spécialisation en sécurité des systèmes et analyse de données.</p>
+          </div>
+        </div>
+        
+        <div class="journey-item">
+          <div class="journey-year">2024-2025</div>
+          <div class="journey-content">
+            <h3>Stage Cybersécurité</h3>
+            <p>Analyse des failles réseau et mise en place de protections.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section-footer">
+        <a href="../HTML/Parcours_HTML/ParcoursPage.html" class="btn btn-outline">Découvrir mon parcours complet</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION VEILLE TECHNOLOGIQUE -->
+  <section class="tech-watch">
+    <div class="container">
+      <div class="section-header">
+        <h2>Veille Technologique</h2>
+        <p>Mes explorations des dernières tendances en IA et développement web</p>
+      </div>
+      
+      <div class="watch-grid">
+        <div class="watch-card">
+          <div class="watch-category">IA Générative</div>
+          <h3>L'évolution des modèles de langage</h3>
+          <p>Analyse des dernières avancées en matière d'IA générative et leurs applications pratiques.</p>
+          <a href="../HTML/Veilles.html" class="watch-link">Lire l'article</a>
+        </div>
+        
+        <div class="watch-card">
+          <div class="watch-category">Développement Web</div>
+          <h3>Les frameworks JS en 2024</h3>
+          <p>Comparaison des tendances actuelles et émergentes dans l'écosystème JavaScript.</p>
+          <a href="../HTML/Veilles.html" class="watch-link">Lire l'article</a>
+        </div>
+      </div>
+      
+      <div class="section-footer">
+        <a href="../HTML/Veilles.html" class="btn btn-outline">Accéder à ma veille</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CONTACT -->
+  <section id="contact" class="contact-preview">
+    <div class="container">
+      <div class="contact-content">
+        <h2>Intéressé par mon profil ?</h2>
+        <p>N'hésitez pas à me contacter pour discuter de projets, d'opportunités ou simplement échanger autour des technologies.</p>
+        
+        <div class="contact-actions">
+          <a href="mailto:divin.kimia@example.com" class="btn btn-primary">Me contacter</a>
+          <a href="CV_Divin_Kimia.pdf" class="btn btn-secondary" download>Télécharger mon CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand-info">
+            <img src="../img/ProfileAccueil.jpeg" alt="avatar" class="footer-logo">
+            <div>
+              <h3>Divin Kimia</h3>
+              <p>Développeur Web & Passionné d'IA</p>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Créateur d'expériences digitales innovantes, à la croisée du développement web et de l'intelligence artificielle.
+          </p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="../HTML/Accueil.html">Accueil</a></li>
+              <li><a href="../HTML/Parcours_HTML/ParcoursPage.html">Parcours</a></li>
+              <li><a href="../HTML/Projets.html">Projets</a></li>
+              <li><a href="competences.html">Compétences</a></li>
+              <li><a href="../HTML/Veilles.html">Veilles</a></li>
+              <li><a href="../HTML/MeDecouvrir.html">Me découvrir</a></li>
+              <li><a href="../HTML/Blog.html">Blog</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-group">
+            <h4>Réseaux</h4>
+            <ul>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-group">
+            <h4>Légal</h4>
+            <ul>
+              <li><a href="#">Mentions légales</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Divin Kimia — Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Me Découvrir | Divin Kimia</title>
+
+  <!-- Lien vers le CSS -->
+  <link rel="stylesheet" href="../CSS/MeDecouvrire.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- JS chargé en bas (defer) -->
+  <script src="../JS/GalaxyEffect.js" defer></script>
+  <script src="../JS/MeDecouvrire.js" defer></script>
+</head>
+<body>
+  <!-- Container pour l'effet galaxie -->
+  <div id="galaxy-container"></div>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="../img/ProfileAccueil.jpeg" alt="avatar" class="logo">
+      <span class="brand">Divin Kimia</span>
+    </div>
+
+    <button class="nav-toggle" aria-label="Ouvrir le menu">
+      <span class="hamburger"></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="../HTML/Accueil.html">Accueil</a></li>
+      
+      <!-- Menu Parcours avec sous-menu dynamique -->
+      <li class="dropdown dynamic-dropdown">
+        <a href="../HTML/Parcours_HTML/ParcoursPage.html" class="dropdown-toggle" data-default-text="Parcours">Parcours</a>
+        <ul class="dropdown-menu dynamic-menu">
+          <li><a href="../HTML/Parcours_HTML/ExperiencesProfessionnels.html" class="swap-menu">Experiences professionnel</a></li>
+          <li><a href="../HTML/Parcours_HTML/FormationsPage.html" class="swap-menu">Formations</a></li>
+          <li><a href="../HTML/Parcours_HTML/CertificationPage.html" class="swap-menu">Certification</a></li>
+        </ul>
+      </li>
+      
+      <!-- Menu Projets -->
+      <li><a href="../HTML/Projets.html">Projets</a></li>
+      
+      <!-- Menu Compétences -->
+      <li><a href="competences.html">Compétences</a></li>
+      
+      <li><a href="../HTML/Veilles.html">Veilles</a></li>
+      <li><a href="../HTML/MeDecouvrir.html" class="active">Me découvrir</a></li>
+      <li><a href="../HTML/Blog.html">Blog</a></li>
+    </ul>
+
+    <a href="#contact" class="nav-btn">Contact</a>
+  </nav>
+
+  <!-- HERO SECTION AVEC IMAGE STICKER -->
+  <section class="hero-section">
+    <div class="hero-background">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    
+    <div class="hero-content">
+      <div class="sticker-container">
+        <div class="sticker-wrapper">
+          <img src="../img/ProfileAccueil.jpeg" alt="Divin Kimia" class="profile-sticker">
+          <div class="sticker-glow"></div>
+        </div>
+      </div>
+      
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="title-line-1">Bonjour, je suis</span>
+          <span class="title-line-2">Divin <span class="accent-gradient">Kimia</span></span>
+        </h1>
+        <p class="hero-subtitle">Développeur passionné, créatif et toujours prêt à relever de nouveaux défis</p>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <span>Découvrir</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SECTION DESCRIPTIF PERSONNEL -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text-wrapper">
+          <div class="section-label">À propos</div>
+          <h2 class="section-title">Mon Parcours & Ma Vision</h2>
+          
+          <div class="about-text">
+            <p class="lead-text">
+              Passionné par l'informatique depuis mon plus jeune âge, j'ai transformé ma curiosité en expertise. 
+              Mon parcours est marqué par des épreuves qui m'ont forgé, des défis qui m'ont poussé à toujours 
+              aller plus loin, et une vision de l'informatique comme outil de transformation et d'innovation.
+            </p>
+            
+            <p>
+              Pour moi, l'informatique n'est pas seulement une discipline technique, c'est un art qui permet 
+              de créer, de résoudre des problèmes complexes et d'améliorer la vie des gens. Chaque ligne de 
+              code que j'écris est pensée pour avoir un impact positif, chaque projet est une opportunité 
+              d'apprendre et de grandir.
+            </p>
+            
+            <p>
+              Ma générosité se manifeste dans ma volonté de partager mes connaissances, d'aider mes pairs 
+              et de contribuer à des projets qui ont du sens. Je crois fermement que la technologie doit 
+              être accessible et bénéfique pour tous, et c'est cette conviction qui guide mon travail 
+              quotidien.
+            </p>
+          </div>
+          
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-target="15">0</div>
+              <div class="stat-label">Projets réalisés</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="3">0</div>
+              <div class="stat-label">Années d'expérience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="100">0</div>
+              <div class="stat-label">% de passion</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-visual">
+          <div class="floating-card card-1">
+            <div class="card-icon">💻</div>
+            <div class="card-text">Code & Innovation</div>
+          </div>
+          <div class="floating-card card-2">
+            <div class="card-icon">🎯</div>
+            <div class="card-text">Excellence</div>
+          </div>
+          <div class="floating-card card-3">
+            <div class="card-icon">🤝</div>
+            <div class="card-text">Collaboration</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PASSIONS -->
+  <section class="passions-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Passions</div>
+        <h2 class="section-title">Ce qui m'anime</h2>
+        <p class="section-description">Les activités qui façonnent ma personnalité et enrichissent ma créativité</p>
+      </div>
+      
+      <div class="passions-grid">
+        <div class="passion-card" data-passion="tech">
+          <div class="passion-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="passion-title">Informatique & Technologie</h3>
+          <p class="passion-description">
+            Une passion qui ne cesse de grandir. J'explore constamment les nouvelles technologies, 
+            les frameworks émergents et les tendances du développement web et mobile.
+          </p>
+          <div class="passion-glow"></div>
+        </div>
+        
+        <div class="passion-card" data-passion="gym">
+          <div class="passion-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"></path>
+              <path d="M6 15l6-6 6 6"></path>
+            </svg>
+          </div>
+          <h3 class="passion-title">Gym & Fitness</h3>
+          <p class="passion-description">
+            L'équilibre entre corps et esprit. La gym me permet de rester concentré, discipliné 
+            et de maintenir une énergie positive pour mes projets.
+          </p>
+          <div class="passion-glow"></div>
+        </div>
+        
+        <div class="passion-card" data-passion="photo">
+          <div class="passion-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+              <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+          </div>
+          <h3 class="passion-title">Photographie</h3>
+          <p class="passion-description">
+            Capturer des moments, des émotions et des perspectives uniques. La photographie développe 
+            mon œil créatif et ma sensibilité esthétique.
+          </p>
+          <div class="passion-glow"></div>
+        </div>
+        
+        <div class="passion-card" data-passion="reading">
+          <div class="passion-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+          </div>
+          <h3 class="passion-title">Lecture</h3>
+          <p class="passion-description">
+            S'évader, apprendre, grandir. La lecture est ma source d'inspiration constante, 
+            qu'il s'agisse de romans, de livres techniques ou de biographies.
+          </p>
+          <div class="passion-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION GALERIE PHOTOS -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Galerie</div>
+        <h2 class="section-title">Mes Photographies</h2>
+        <p class="section-description">Un aperçu de ma créativité à travers l'objectif</p>
+      </div>
+      
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Les images seront ajoutées dynamiquement ou via le HTML -->
+        <div class="gallery-item" data-category="nature">
+          <div class="gallery-image-placeholder">
+            <span class="gallery-placeholder-icon">📸</span>
+            <span class="gallery-placeholder-text">Photo Nature</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Nature</h4>
+              <p>Paysage capturé</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="urban">
+          <div class="gallery-image-placeholder">
+            <span class="gallery-placeholder-icon">🏙️</span>
+            <span class="gallery-placeholder-text">Photo Urbaine</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Urbain</h4>
+              <p>Architecture moderne</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item gallery-item-large" data-category="portrait">
+          <div class="gallery-image-placeholder">
+            <span class="gallery-placeholder-icon">👤</span>
+            <span class="gallery-placeholder-text">Portrait</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Portrait</h4>
+              <p>Capture d'émotion</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="abstract">
+          <div class="gallery-image-placeholder">
+            <span class="gallery-placeholder-icon">🎨</span>
+            <span class="gallery-placeholder-text">Abstrait</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Abstrait</h4>
+              <p>Formes et couleurs</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="tech">
+          <div class="gallery-image-placeholder">
+            <span class="gallery-placeholder-icon">💻</span>
+            <span class="gallery-placeholder-text">Tech</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Technologie</h4>
+              <p>Monde digital</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="nature">
+          <div class="gallery-image-placeholder">
+            <span class="gallery-placeholder-icon">🌅</span>
+            <span class="gallery-placeholder-text">Paysage</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Paysage</h4>
+              <p>Horizon lointain</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION AVIS & COMMENTAIRES -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Témoignages</div>
+        <h2 class="section-title">Ce qu'on dit de moi</h2>
+        <p class="section-description">Les avis de ceux qui m'ont côtoyé</p>
+      </div>
+      
+      <div class="testimonials-carousel">
+        <div class="testimonials-track" id="testimonials-track">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-quote">"</div>
+              <p class="testimonial-text">
+                Divin est un développeur exceptionnel, toujours prêt à relever les défis les plus complexes. 
+                Sa capacité à trouver des solutions innovantes et sa générosité dans le partage de connaissances 
+                font de lui un collaborateur précieux.
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">JD</div>
+                <div class="author-info">
+                  <div class="author-name">Jean Dupont</div>
+                  <div class="author-role">Chef de Projet</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-quote">"</div>
+              <p class="testimonial-text">
+                Travailler avec Divin a été une expérience enrichissante. Son approche méthodique, 
+                sa passion pour l'informatique et son sens du travail d'équipe sont remarquables. 
+                Il sait allier rigueur technique et créativité.
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">MS</div>
+                <div class="author-info">
+                  <div class="author-name">Marie Simon</div>
+                  <div class="author-role">Développeuse Senior</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-quote">"</div>
+              <p class="testimonial-text">
+                Divin apporte une énergie positive à chaque projet. Sa curiosité intellectuelle 
+                et sa volonté d'apprendre en permanence sont des qualités qui le distinguent. 
+                Un vrai passionné qui sait aussi être sociable et créer une bonne ambiance.
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">PL</div>
+                <div class="author-info">
+                  <div class="author-name">Pierre Laurent</div>
+                  <div class="author-role">Formateur</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-quote">"</div>
+              <p class="testimonial-text">
+                Ce qui m'impressionne chez Divin, c'est sa capacité à rester calme sous pression 
+                tout en maintenant une excellente qualité de travail. Il sait quand il faut être 
+                sérieux et quand il faut savoir faire la fête !
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">CL</div>
+                <div class="author-info">
+                  <div class="author-name">Claire Leclerc</div>
+                  <div class="author-role">Recruteuse</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-controls">
+          <button class="carousel-btn prev-btn" aria-label="Témoignage précédent">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <div class="carousel-dots" id="carousel-dots"></div>
+          <button class="carousel-btn next-btn" aria-label="Témoignage suivant">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PERSONNALITÉ BONUS -->
+  <section class="personality-section">
+    <div class="container">
+      <div class="personality-content">
+        <div class="personality-visual">
+          <div class="personality-circle">
+            <div class="circle-segment segment-1" data-trait="Réservé"></div>
+            <div class="circle-segment segment-2" data-trait="Sociable"></div>
+            <div class="circle-segment segment-3" data-trait="Créatif"></div>
+            <div class="circle-segment segment-4" data-trait="Passionné"></div>
+            <div class="circle-center">
+              <span>DK</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="personality-text">
+          <div class="section-label">Personnalité</div>
+          <h2 class="section-title">Qui je suis vraiment</h2>
+          <p class="personality-description">
+            Réservé par nature, j'aime observer et analyser avant d'agir. Mais ne vous y trompez pas : 
+            quand il s'agit de collaborer, de partager des idées ou de célébrer les succès, je sais 
+            être pleinement présent et sociable.
+          </p>
+          <p class="personality-description">
+            J'apprécie les couleurs sombres qui reflètent ma personnalité introspective, mais je sais 
+            aussi apporter de la lumière et de l'énergie quand le moment le demande. Parce que oui, 
+            je sais faire la fête quand il faut ! L'équilibre entre sérieux et détente est essentiel 
+            pour moi.
+          </p>
+          
+          <div class="personality-traits">
+            <div class="trait-item">
+              <span class="trait-icon">🌙</span>
+              <span class="trait-text">Nuit & Ambiance sombre</span>
+            </div>
+            <div class="trait-item">
+              <span class="trait-icon">🎉</span>
+              <span class="trait-text">Sait faire la fête</span>
+            </div>
+            <div class="trait-item">
+              <span class="trait-icon">🤝</span>
+              <span class="trait-text">Sociable & Ouvert</span>
+            </div>
+            <div class="trait-item">
+              <span class="trait-icon">💡</span>
+              <span class="trait-text">Créatif & Innovant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-content">
+        <h2 class="contact-title">Travaillons ensemble</h2>
+        <p class="contact-description">
+          Vous avez un projet en tête ? Une question ? N'hésitez pas à me contacter, 
+          j'adore échanger autour de l'informatique et des nouvelles technologies.
+        </p>
+        <div class="contact-actions">
+          <a href="mailto:divin.kimia@example.com" class="btn btn-primary">Me contacter</a>
+          <a href="CV_Divin_Kimia.pdf" class="btn btn-secondary" download>Télécharger mon CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand-info">
+            <img src="../img/ProfileAccueil.jpeg" alt="avatar" class="footer-logo">
+            <div>
+              <h3>Divin Kimia</h3>
+              <p>Développeur Web & Passionné d'IA</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="../HTML/Accueil.html">Accueil</a></li>
+              <li><a href="../HTML/Parcours_HTML/ParcoursPage.html">Parcours</a></li>
+              <li><a href="../HTML/Projets.html">Projets</a></li>
+              <li><a href="../HTML/Veilles.html">Veilles</a></li>
+              <li><a href="../HTML/MeDecouvrir.html">Me découvrir</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-group">
+            <h4>Réseaux</h4>
+            <ul>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Divin Kimia — Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

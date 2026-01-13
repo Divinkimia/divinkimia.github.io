@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Divin Kimia | Éveil Numérique</title>
+
+  <!-- Lien vers le CSS -->
+  <link rel="stylesheet" href="../CSS/Veilles.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icônes Feather -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- JS chargé en bas (defer) -->
+  <script src="../JS/GalaxyEffect.js" defer></script>
+  <script src="../JS/Veilles.js" defer></script>
+</head>
+<body>
+  <!-- Container pour l'effet galaxie -->
+  <div id="galaxy-container"></div>
+  <!-- NAVBAR CORRIGÉE -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <img src="../img/ProfileAccueil.jpeg" alt="avatar" class="logo">
+        <span class="brand">Divin Kimia</span>
+      </div>
+
+      <button class="nav-toggle" aria-label="Ouvrir le menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="../HTML/Accueil.html">Accueil</a></li>
+          
+          <!-- Menu Parcours avec sous-menu -->
+          <li class="dropdown dynamic-dropdown">
+            <a href="../HTML/Parcours_HTML/ParcoursPage.html" class="dropdown-toggle" data-default-text="Parcours">Parcours</a>
+            <ul class="dropdown-menu dynamic-menu">
+              <li><a href="../HTML/Parcours_HTML/ExperiencesProfessionnels.html" class="swap-menu">Expériences professionnelles</a></li>
+              <li><a href="../HTML/Parcours_HTML/FormationsPage.html" class="swap-menu">Formations</a></li>
+              <li><a href="../HTML/Parcours_HTML/CertificationPage.html" class="swap-menu">Certifications</a></li>
+            </ul>
+          </li>
+          
+          <!-- Nouveau menu Projets -->
+          <li><a href="../HTML/Projets.html">Projets</a></li>
+          
+          <!-- Nouveau menu Compétences -->
+          <li><a href="competences.html">Compétences</a></li>
+          
+          <li><a href="../HTML/Veilles.html" class="active">Veilles</a></li>
+          <li><a href="../HTML/MeDecouvrir.html">Me découvrir</a></li>
+          <li><a href="../HTML/Blog.html">Blog</a></li>
+        </ul>
+
+        <a href="#contact" class="nav-btn">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+ <!-- HERO SECTION BIBLIOTHÈQUE INTERACTIVE -->
+<header class="library-hero">
+  <div class="library-background">
+    <!-- Bibliothèque 3D interactive -->
+    <div class="interactive-library">
+      <div class="library-perspective">
+        <div class="shelf-row">
+          <div class="shelf" data-depth="0.2">
+            <div class="book interactive-book" data-category="ia" style="--book-color: #00b4ff">
+              <div class="book-cover">
+                <span>IA</span>
+              </div>
+            </div>
+            <div class="book interactive-book" data-category="web" style="--book-color: #ff6b6b">
+              <div class="book-cover">
+                <span>Web</span>
+              </div>
+            </div>
+            <div class="book interactive-book" data-category="cloud" style="--book-color: #6c5ce7">
+              <div class="book-cover">
+                <span>Cloud</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shelf-row">
+          <div class="shelf" data-depth="0.4">
+            <div class="book interactive-book" data-category="security" style="--book-color: #ffd93d">
+              <div class="book-cover">
+                <span>Secu</span>
+              </div>
+            </div>
+            <div class="book interactive-book" data-category="data" style="--book-color: #4ecdc4">
+              <div class="book-cover">
+                <span>Data</span>
+              </div>
+            </div>
+            <div class="book interactive-book" data-category="mobile" style="--book-color: #fd79a8">
+              <div class="book-cover">
+                <span>Mobile</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Effets de particules -->
+    <div class="floating-elements">
+      <div class="floating-element element-1">🤖</div>
+      <div class="floating-element element-2">🌐</div>
+      <div class="floating-element element-3">🔒</div>
+      <div class="floating-element element-4">☁️</div>
+      <div class="floating-element element-5">📱</div>
+    </div>
+
+    <!-- Lueur d'accent -->
+    <div class="accent-glow"></div>
+  </div>
+  
+  <div class="container">
+    <div class="hero-content">
+      <!-- Badge animé -->
+      <div class="hero-badge">
+        <div class="badge-pulse"></div>
+        <i data-feather="book-open"></i>
+        <span>Bibliothèque Digitale Interactive</span>
+      </div>
+
+      <!-- Titre principal -->
+      <h1 class="hero-title">
+        <span class="title-line">Éveil</span>
+        <span class="title-line accent-text">Numérique</span>
+      </h1>
+
+      <!-- Sous-titre dynamique -->
+      <div class="hero-subtitle">
+        <div class="typing-container">
+          <p class="typing-text">Explorez ma collection d'analyses technologiques</p>
+        </div>
+      </div>
+
+      <!-- Actions principales -->
+      <div class="hero-actions">
+        <a href="#analyses" class="btn btn-primary magnetic-btn">
+          <div class="btn-content">
+            <i data-feather="search"></i>
+            <span>Explorer les Analyses</span>
+            <div class="btn-hover-effect"></div>
+          </div>
+        </a>
+        <a href="#themes" class="btn btn-secondary magnetic-btn">
+          <div class="btn-content">
+            <i data-feather="grid"></i>
+            <span>Parcourir les Thèmes</span>
+            <div class="btn-hover-effect"></div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Statistiques animées -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i data-feather="file-text"></i>
+          </div>
+          <div class="stat-content">
+            <span class="stat-number" data-count="42">0</span>
+            <span class="stat-label">Analyses</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i data-feather="cpu"></i>
+          </div>
+          <div class="stat-content">
+            <span class="stat-number" data-count="18">0</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i data-feather="calendar"></i>
+          </div>
+          <div class="stat-content">
+            <span class="stat-number" data-count="12">0</span>
+            <span class="stat-label">Mois de veille</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Indicateur de scroll amélioré -->
+  <div class="scroll-indicator">
+    <div class="scroll-arrow">
+      <div class="scroll-arrow-inner"></div>
+    </div>
+    <span>Découvrir la bibliothèque</span>
+  </div>
+</header>
+
+  <!-- SECTION INTRODUCTION -->
+  <section class="intro-section">
+    <div class="container">
+      <div class="intro-content">
+        <div class="intro-text">
+          <h2>Ma Philosophie de Veille Numérique</h2>
+          <p>
+            Dans un monde numérique en perpétuelle évolution, la veille technologique n'est pas une option mais une nécessité. 
+            Cette bibliothèque virtuelle rassemble mes recherches, analyses et réflexions sur les technologies émergentes 
+            qui façonnent notre avenir numérique.
+          </p>
+          <p>
+            Chaque "livre" représente une exploration approfondie d'une technologie, d'une tendance ou d'une innovation 
+            qui mérite notre attention. Naviguez, découvrez et inspirez-vous.
+          </p>
+          
+          <div class="intro-features">
+            <div class="feature">
+              <i data-feather="trending-up"></i>
+              <div>
+                <h4>Veille Active</h4>
+                <p>Surveillance continue des innovations</p>
+              </div>
+            </div>
+            <div class="feature">
+              <i data-feather="bar-chart-2"></i>
+              <div>
+                <h4>Analyse Critique</h4>
+                <p>Évaluation approfondie des technologies</p>
+              </div>
+            </div>
+            <div class="feature">
+              <i data-feather="share-2"></i>
+              <div>
+                <h4>Partage de Connaissances</h4>
+                <p>Diffusion des découvertes pertinentes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="intro-visual">
+          <div class="digital-library">
+            <div class="library-interface">
+              <div class="screen-header">
+                <div class="screen-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="screen-title">Bibliothèque Digitale</div>
+              </div>
+              <div class="screen-content">
+                <div class="search-bar">
+                  <i data-feather="search"></i>
+                  <input type="text" placeholder="Rechercher une technologie...">
+                </div>
+                <div class="category-tags">
+                  <span class="tag active">Tous</span>
+                  <span class="tag">IA</span>
+                  <span class="tag">Web</span>
+                  <span class="tag">Cloud</span>
+                  <span class="tag">Security</span>
+                </div>
+                <div class="book-previews">
+                  <div class="preview-book"></div>
+                  <div class="preview-book"></div>
+                  <div class="preview-book"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RAYONNAGES THÉMATIQUES -->
+  <section id="themes" class="shelves-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Rayonnages Thématiques</h2>
+        <p>Explorez mes domaines d'expertise et de veille technologique</p>
+      </div>
+
+      <div class="shelves-grid">
+        <!-- Rayonnage IA & Machine Learning -->
+        <div class="shelf-category" data-category="ia">
+          <div class="shelf-header">
+            <div class="shelf-icon">
+              <i data-feather="cpu"></i>
+            </div>
+            <div>
+              <h3>Intelligence Artificielle</h3>
+              <span class="shelf-count">8 analyses</span>
+            </div>
+          </div>
+          <div class="shelf-books">
+            <div class="book-item">
+              <div class="book-spine" style="--color: #00b4ff"></div>
+              <div class="book-content">
+                <h4>IA Générative</h4>
+                <p>GPT-4, Midjourney, DALL-E</p>
+                <div class="book-meta">
+                  <span class="book-date">Mise à jour: Nov 2024</span>
+                  <span class="book-pages">12 pages</span>
+                </div>
+              </div>
+            </div>
+            <div class="book-item">
+              <div class="book-spine" style="--color: #7cc7ff"></div>
+              <div class="book-content">
+                <h4>Machine Learning</h4>
+                <p>TensorFlow, PyTorch, Scikit-learn</p>
+                <div class="book-meta">
+                  <span class="book-date">Mise à jour: Oct 2024</span>
+                  <span class="book-pages">15 pages</span>
+                </div>
+              </div>
+            </div>
+            <div class="book-item">
+              <div class="book-spine" style="--color: #0099cc"></div>
+              <div class="book-content">
+                <h4>Computer Vision</h4>
+                <p>YOLO, OpenCV, CNN</p>
+                <div class="book-meta">
+                  <span class="book-date">Mise à jour: Sep 2024</span>
+                  <span class="book-pages">10 pages</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="shelf-explore">
+            <i data-feather="arrow-right"></i>
+            Explorer cette section
+          </button>
+        </div>
+
+        <!-- Rayonnage Développement Web -->
+        <div class="shelf-category" data-category="web">
+          <div class="shelf-header">
+            <div class="shelf-icon">
+              <i data-feather="globe"></i>
+            </div>
+            <div>
+              <h3>Développement Web</h3>
+              <span class="shelf-count">10 analyses</span>
+            </div>
+          </div>
+          <div class="shelf-books">
+            <div class="book-item">
+              <div class="book-spine" style="--color: #ff6b6b"></div>
+              <div class="book-content">
+                <h4>Frameworks JS</h4>
+                <p>React, Vue, Angular, Svelte</p>
+                <div class="book-meta">
+                  <span class="book-date">Mise à jour: Nov 2024</span>
+                  <span class="book-pages">14 pages</span>
+                </div>
+              </div>
+            </div>
+            <div class="book-item">
+              <div class="book-spine" style="--color: #4ecdc4"></div>
+              <div class="book-content">
+                <h4>Architecture</h4>
+                <p>Microservices, JAMstack, Serverless</p>
+                <div class="book-meta">
+                  <span class="book-date">Mise à jour: Oct 2024</span>
+                  <span class="book-pages">18 pages</span>
+                </div>
+              </div>
+            </div>
+            <div class="book-item">
+              <div class="book-spine" style="--color: #45b7d1"></div>
+              <div class="book-content">
+                <h4>Performance Web</h4>
+                <p>Core Web Vitals, Optimisation</p>
+                <div class="book-meta">
+                  <span class="book-date">Mise à jour: Sep 2024</span>
+                  <span class="book-pages">11 pages</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="shelf-explore">
+            <i data-feather="arrow-right"></i>
+            Explorer cette section
+          </button>
+        </div>
+
+        <!-- Rayonnage Cybersécurité -->
+        <div class="shelf-category" data-category="security">
+          <div class="shelf-header">
+            <div class="shelf-icon">
+              <i data-feather="shield"></i>
+            </div>
+            <div>
+              <h3>Cybersécurité</h3>
+              <span class="shelf-count">6 analyses</span>
+            </div>
+          </div>
+          <div class="shelf-books">
+            <div class="book-item">
+              <div class="book-spine" style="--color: #ffd93d"></div>
+              <div class="book-content">
+                <h4>Sécurité Réseau</h4>
+                <p>Firewalls, VPN, Zero Trust</p>
+                <div class="book-meta">
+                  <span class="book-date">Mise à jour: Nov 2024</span>
+                  <span class="book-pages">16 pages</span>
+                </div>
+              </div>
+            </div>
+            <div class="book-item">
+              <div class="book-spine" style="--color: #ffa36c"></div>
+              <div class="book-content">
+                <h4>Ethical Hacking</h4>
+                <p>Pentesting, Bug Bounty</p>
+                <div class="book-meta">
+                  <span class="book-date">Mise à jour: Oct 2024</span>
+                  <span class="book-pages">13 pages</span>
+                </div>
+              </div>
+            </div>
+            <div class="book-item">
+              <div class="book-spine" style="--color: #95e1d3"></div>
+              <div class="book-content">
+                <h4>Cryptographie</h4>
+                <p>Chiffrement, Blockchain</p>
+                <div class="book-meta">
+                  <span class="book-date">Mise à jour: Sep 2024</span>
+                  <span class="book-pages">9 pages</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="shelf-explore">
+            <i data-feather="arrow-right"></i>
+            Explorer cette section
+          </button>
+        </div>
+
+        <!-- Rayonnage Cloud & DevOps -->
+        <div class="shelf-category" data-category="cloud">
+          <div class="shelf-header">
+            <div class="shelf-icon">
+              <i data-feather="cloud"></i>
+            </div>
+            <div>
+              <h3>Cloud & DevOps</h3>
+              <span class="shelf-count">9 analyses</span>
+            </div>
+          </div>
+          <div class="shelf-books">
+            <div class="book-item">
+              <div class="book-spine" style="--color: #6c5ce7"></div>
+              <div class="book-content">
+                <h4>Cloud Providers</h4>
+                <p>AWS, Azure, Google Cloud</p>
+                <div class="book-meta">
+                  <span class="book-date">Mise à jour: Nov 2024</span>
+                  <span class="book-pages">17 pages</span>
+                </div>
+              </div>
+            </div>
+            <div class="book-item">
+              <div class="book-spine" style="--color: #a29bfe"></div>
+              <div class="book-content">
+                <h4>Conteneurisation</h4>
+                <p>Docker, Kubernetes, Podman</p>
+                <div class="book-meta">
+                  <span class="book-date">Mise à jour: Oct 2024</span>
+                  <span class="book-pages">14 pages</span>
+                </div>
+              </div>
+            </div>
+            <div class="book-item">
+              <div class="book-spine" style="--color: #fd79a8"></div>
+              <div class="book-content">
+                <h4>CI/CD</h4>
+                <p>GitHub Actions, GitLab CI, Jenkins</p>
+                <div class="book-meta">
+                  <span class="book-date">Mise à jour: Sep 2024</span>
+                  <span class="book-pages">12 pages</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="shelf-explore">
+            <i data-feather="arrow-right"></i>
+            Explorer cette section
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANALYSES RÉCENTES -->
+  <section id="analyses" class="analyses-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Analyses Récentes</h2>
+        <p>Découvrez mes dernières recherches et réflexions technologiques</p>
+      </div>
+
+      <div class="analyses-grid">
+        <!-- Analyse 1 -->
+        <article class="analysis-card">
+          <div class="card-badge">
+            <span class="badge-category">IA Générative</span>
+            <span class="badge-date">15 Nov 2024</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">L'impact des LLM sur le développement logiciel</h3>
+            <p class="card-excerpt">
+              Analyse approfondie de l'évolution des modèles de langage et leur influence sur les pratiques de développement moderne. Exploration des outils, des méthodologies et des défis éthiques.
+            </p>
+            <div class="card-meta">
+              <div class="meta-item">
+                <i data-feather="clock"></i>
+                <span>12 min de lecture</span>
+              </div>
+              <div class="meta-item">
+                <i data-feather="bar-chart-2"></i>
+                <span>Niveau: Avancé</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-actions">
+            <button class="card-btn read-btn">
+              <i data-feather="book-open"></i>
+              Lire l'analyse
+            </button>
+            <button class="card-btn save-btn">
+              <i data-feather="bookmark"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Analyse 2 -->
+        <article class="analysis-card">
+          <div class="card-badge">
+            <span class="badge-category">Web 3.0</span>
+            <span class="badge-date">8 Nov 2024</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Vers un internet décentralisé : mythe ou réalité ?</h3>
+            <p class="card-excerpt">
+              Exploration des technologies blockchain et leur potentiel pour créer un web véritablement décentralisé. Analyse des cas d'usage, des limitations et de l'adoption réelle.
+            </p>
+            <div class="card-meta">
+              <div class="meta-item">
+                <i data-feather="clock"></i>
+                <span>18 min de lecture</span>
+              </div>
+              <div class="meta-item">
+                <i data-feather="bar-chart-2"></i>
+                <span>Niveau: Intermédiaire</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-actions">
+            <button class="card-btn read-btn">
+              <i data-feather="book-open"></i>
+              Lire l'analyse
+            </button>
+            <button type="button" class="card-btn save-btn">
+              <i data-feather="bookmark"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Analyse 3 -->
+        <article class="analysis-card">
+          <div class="card-badge">
+            <span class="badge-category">Cybersécurité</span>
+            <span class="badge-date">1 Nov 2024</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Nouvelles menaces en sécurité cloud</h3>
+            <p class="card-excerpt">
+              Étude des dernières vulnérabilités dans les environnements cloud et stratégies de mitigation. Focus sur les bonnes pratiques et les outils de surveillance avancés.
+            </p>
+            <div class="card-meta">
+              <div class="meta-item">
+                <i data-feather="clock"></i>
+                <span>15 min de lecture</span>
+              </div>
+              <div class="meta-item">
+                <i data-feather="bar-chart-2"></i>
+                <span>Niveau: Expert</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-actions">
+            <button class="card-btn read-btn">
+              <i data-feather="book-open"></i>
+              Lire l'analyse
+            </button>
+            <button class="card-btn save-btn">
+              <i data-feather="bookmark"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Analyse 4 -->
+        <article class="analysis-card">
+          <div class="card-badge">
+            <span class="badge-category">DevOps</span>
+            <span class="badge-date">25 Oct 2024</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">L'évolution des pratiques GitOps</h3>
+            <p class="card-excerpt">
+              Analyse des meilleures pratiques et outils émergents dans l'écosystème GitOps moderne. Comparaison des solutions et retours d'expérience sur l'implémentation.
+            </p>
+            <div class="card-meta">
+              <div class="meta-item">
+                <i data-feather="clock"></i>
+                <span>10 min de lecture</span>
+              </div>
+              <div class="meta-item">
+                <i data-feather="bar-chart-2"></i>
+                <span>Niveau: Intermédiaire</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-actions">
+            <button class="card-btn read-btn">
+              <i data-feather="book-open"></i>
+              Lire l'analyse
+            </button>
+            <button class="card-btn save-btn">
+              <i data-feather="bookmark"></i>
+            </button>
+          </div>
+        </article>
+      </div>
+      
+      <div class="section-footer">
+        <a href="#" class="btn btn-outline">
+          <i data-feather="archive"></i>
+          Voir toutes les analyses
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION RESSOURCES -->
+  <section class="resources-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Mes Ressources de Veille</h2>
+        <p>Les sources qui alimentent ma curiosité et ma compréhension du numérique</p>
+      </div>
+
+      <div class="resources-grid">
+        <div class="resource-category">
+          <div class="category-header">
+            <div class="category-icon">
+              <i data-feather="rss"></i>
+            </div>
+            <h3>Flux RSS & Blogs</h3>
+          </div>
+          <ul class="resource-list">
+            <li>
+              <i data-feather="external-link"></i>
+              <div>
+                <strong>TechCrunch</strong>
+                <span>Actualités startups et innovations</span>
+              </div>
+            </li>
+            <li>
+              <i data-feather="external-link"></i>
+              <div>
+                <strong>Towards Data Science</strong>
+                <span>Articles experts en data science</span>
+              </div>
+            </li>
+            <li>
+              <i data-feather="external-link"></i>
+              <div>
+                <strong>CSS-Tricks</strong>
+                <span>Ressources front-end avancées</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="resource-category">
+          <div class="category-header">
+            <div class="category-icon">
+              <i data-feather="mail"></i>
+            </div>
+            <h3>Newsletters</h3>
+          </div>
+          <ul class="resource-list">
+            <li>
+              <i data-feather="star"></i>
+              <div>
+                <strong>JavaScript Weekly</strong>
+                <span>Actualités écosystème JavaScript</span>
+              </div>
+            </li>
+            <li>
+              <i data-feather="star"></i>
+              <div>
+                <strong>AI Breakfast</strong>
+                <span>Nouvelles de l'IA et machine learning</span>
+              </div>
+            </li>
+            <li>
+              <i data-feather="star"></i>
+              <div>
+                <strong>Security Newsletter</strong>
+                <span>Alertes sécurité et bonnes pratiques</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="resource-category">
+          <div class="category-header">
+            <div class="category-icon">
+              <i data-feather="headphones"></i>
+            </div>
+            <h3>Podcasts</h3>
+          </div>
+          <ul class="resource-list">
+            <li>
+              <i data-feather="play-circle"></i>
+              <div>
+                <strong>Syntax FM</strong>
+                <span>Développement web et outils modernes</span>
+              </div>
+            </li>
+            <li>
+              <i data-feather="play-circle"></i>
+              <div>
+                <strong>Lex Fridman Podcast</strong>
+                <span>IA, science et philosophie</span>
+              </div>
+            </li>
+            <li>
+              <i data-feather="play-circle"></i>
+              <div>
+                <strong>Darknet Diaries</strong>
+                <span>Histoires de cybersécurité</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CONTACT -->
+  <section id="contact" class="contact-preview">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-text">
+          <h2>Échangeons sur l'innovation numérique</h2>
+          <p>Passionné par les technologies émergentes ? Discutons de veille technologique, d'opportunités collaboratives ou échangeons simplement sur les dernières tendances.</p>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:divin.kimia@example.com" class="btn btn-primary">
+            <i data-feather="send"></i>
+            Proposer un échange
+          </a>
+          <a href="../HTML/Accueil.html" class="btn btn-secondary">
+            <i data-feather="home"></i>
+            Retour à l'accueil
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand-info">
+            <img src="../img/ProfileAccueil.jpeg" alt="avatar" class="footer-logo">
+            <div>
+              <h3>Divin Kimia</h3>
+              <p>Développeur Web & Passionné d'IA</p>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Créateur d'expériences digitales innovantes, à la croisée du développement web et de l'intelligence artificielle.
+          </p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="../HTML/Accueil.html">Accueil</a></li>
+              <li><a href="../HTML/Parcours_HTML/ParcoursPage.html">Parcours</a></li>
+              <li><a href="../HTML/Projets.html">Projets</a></li>
+              <li><a href="competences.html">Compétences</a></li>
+              <li><a href="../HTML/Veilles.html">Veilles</a></li>
+              <li><a href="../HTML/MeDecouvrir.html">Me découvrir</a></li>
+              <li><a href="../HTML/Blog.html">Blog</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-group">
+            <h4>Réseaux</h4>
+            <ul>
+              <li><a href="#"><i data-feather="linkedin"></i> LinkedIn</a></li>
+              <li><a href="#"><i data-feather="github"></i> GitHub</a></li>
+              <li><a href="#"><i data-feather="twitter"></i> Twitter</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-group">
+            <h4>Légal</h4>
+            <ul>
+              <li><a href="#">Mentions légales</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Divin Kimia — Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- nitialisation des icônes Feather -->
+  <script> feather.replace(); </script>
+</body>
+</html>
