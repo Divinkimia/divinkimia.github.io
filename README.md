@@ -1,1 +1,0 @@
-# divinkimia.github.io
